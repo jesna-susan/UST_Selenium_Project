@@ -19,5 +19,6 @@ public class Dropdownbox {
         catSelect.selectByValue("11450");
         Thread.sleep(3000);
         catSelect.selectByIndex(10);
+        Thread.sleep(3000);
     }
 }
