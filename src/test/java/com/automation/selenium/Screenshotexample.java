@@ -1,4 +1,4 @@
-package com.automation.class01;
+package com.automation.selenium;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;

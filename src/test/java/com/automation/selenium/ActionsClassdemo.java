@@ -1,4 +1,4 @@
-package com.automation.class01;
+package com.automation.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
