@@ -2,20 +2,20 @@ package com.automation.testng;
 
 import org.testng.annotations.Test;
 
-public class CartPageTest {
+public class CartPageTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"Smoke"})
     public void userCanAddToCart(){
-
+        System.out.println("Test Case 1 cart");
     }
 
-    @Test
+    @Test(groups = {"Regression"})
     public void userCanRemoveItemFromCart(){
-
+        System.out.println("Test Case 2 cart");
     }
 
-    @Test
+    @Test(groups = {"Regression"})
     public void userCanUpdateQuantityOfItem(){
-
+        System.out.println("Test Case 1 order");
     }
 }
