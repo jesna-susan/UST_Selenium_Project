@@ -3,7 +3,7 @@
 <suite name="Suite1" verbose="1">
     <groups>
         <run>
-            <include name="Smoke"/>
+            <exclude name="Smoke"/>
         </run>
     </groups>
     <test name="LoginAndLogoutTest">
