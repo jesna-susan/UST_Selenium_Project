@@ -3,12 +3,19 @@
 <suite name="Suite1" verbose="1">
     <groups>
         <run>
-            <exclude name="Smoke"/>
+            <include name="Smoke"/>
         </run>
     </groups>
+    <listeners>
+        <listener class-name="com.automation.testng.Listeners"/>
+    </listeners>
+    <parameter name="username" value="chrome"/>
+
+
     <test name="LoginAndLogoutTest">
         <classes>
             <class name="com.automation.testng.LoginTest"/>
+            <class name="com.automation.testng.ParameterTest"/>
         </classes>
     </test>
 
