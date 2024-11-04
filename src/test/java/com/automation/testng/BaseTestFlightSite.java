@@ -2,14 +2,16 @@ package com.automation.testng;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+
+import org.testng.annotations.AfterTest;
+
+import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
 
 public class BaseTestFlightSite {
     WebDriver driver = new ChromeDriver();
-    @BeforeMethod(alwaysRun = true)
+    @BeforeTest(alwaysRun = true)
     public void setUp(){
 
         driver.manage().window().maximize();
@@ -17,7 +19,7 @@ public class BaseTestFlightSite {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 
     }
-    @AfterMethod(alwaysRun = true)
+    @AfterTest(alwaysRun = true)
     public void cleanUp(){
         driver.quit();
 

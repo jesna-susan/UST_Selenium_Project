@@ -17,7 +17,7 @@ public class FlightSiteExample extends BaseTestFlightSite {
         source.sendKeys("bangalore");
 
         WebElement destination = driver.findElement(By.xpath("//div[@class='uitk-field has-floatedLabel-label has-icon']/button[@aria-label='Going to']"));
-        destination.clear();
+        //destination.clear();
         destination.sendKeys("Mumbai");
 
 
